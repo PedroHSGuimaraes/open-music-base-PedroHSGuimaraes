@@ -1,0 +1,208 @@
+.filters-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3.125rem;
+}
+.logo {
+  font-size: var(--font-1);
+  font-weight: var(--font-weight-1);
+}
+
+.gener-music {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-2);
+  font-weight: var(--font-weight-1);
+  gap: 1.875rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  font-size: var(--font-3);
+  font-weight: var(--font-weight-2);
+  background-color: var(--color-grey-8);
+  gap: 1.875rem;
+}
+
+.btn {
+  width: 4.6875rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  padding: 0rem 0.5rem 0rem 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-grey-1);
+  color: var(--color-white-fixed);
+}
+.text-price {
+  font-size: var(--font-2);
+  font-weight: var(--font-weight-2);
+}
+.price-filter-container {
+  display: flex;
+  flex-direction: column;
+  height: 4.1875rem;
+  width: 42.25rem;
+  gap: 2.5rem;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2.9rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 1.25rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 19.25rem;
+  height: 16.1875rem;
+  padding: 1.25rem 1rem, 1.25rem, 1rem;
+  gap: 0.625rem;
+  background-color: var(--color-grey-7);
+  border-radius: var(--radius-1);
+  opacity: 0;
+  transform: translateY(1.25rem);
+  animation: fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.card-image {
+  width: 308px;
+  height: 113px;
+  border-radius: var(--radius-1);
+}
+.card-image:hover {
+  zoom: 1.01;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.625rem;
+  margin-left: 1rem;
+  margin-top: 0.625rem;
+}
+.card-subtitle {
+  font-size: var(--font-3);
+  font-weight: var(--font-weight-2);
+  color: var(--color-grey-1);
+}
+.card-title {
+  font-size: var(--font-2);
+  font-weight: var(--font-weight-1);
+  color: var(--color-grey-1);
+}
+
+.card-price {
+  font-size: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--color-grey-1);
+}
+
+.btn-buy {
+  font-size: var(--font-2);
+  font-weight: var(--font-weight-1);
+  color: var(--color-grey-1);
+  width: 85px;
+  height: 32px;
+  background: var(--color-grey-7);
+  border: 1px solid var(--color-grey-7);
+  border-radius: 4px;
+}
+.btn-buy:hover {
+  background-color: var(--color-grey-1);
+  color: var(--color-white-fixed);
+}
+
+.btn:focus {
+  background-color: var(--color-grey-1);
+  color: var(--color-white-fixed);
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.text-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark-mode {
+  background-color: var(--color-grey-0);
+  color: var(--color-white-fixed);
+}
+
+.dark-mode .card {
+  background-color: var(--color-grey-1);
+  color: var(--color-white-fixed);
+}
+
+.dark-mode .card-subtitle {
+  color: var(--color-white-fixed);
+}
+
+.dark-mode .card-title {
+  color: var(--color-white-fixed);
+  font-weight: var(--font-weight-3);
+}
+
+.dark-mode .card-price {
+  color: var(--color-white-fixed);
+}
+
+.dark-mode .btn-buy {
+  background-color: var(--color-grey-2);
+  border: 1px solid var(--color-grey-1);
+  font-weight: var(--font-weight-3);
+  color: var(--color-grey-5);
+}
+.dark-mode .btn-buy:hover {
+  background-color: var(--color-grey-1);
+  color: var(--color-white-fixed);
+}
+.dark-mode .filter-buttons {
+  background-color: var(--color-grey-0);
+  color: var(--color-white-fixed);
+}
+
+.dark-mode .btn {
+  background-color: var(--color-grey-1);
+  border: 1px solid var(--color-grey-1);
+  font-weight: var(--font-weight-3);
+  color: var(--color-grey-5);
+}
+
+.dark-mode .btn:hover {
+  background-color: var(--color-grey-0);
+  color: var(--color-white-fixed);
+}
+
+.dark-mode .btn:focus {
+  background-color: var(--color-grey-0);
+  color: var(--color-white-fixed);
+  border: 1px solid var(--color-grey-5);
+}
+
+.dark-mode button {
+  background-color: var(--color-grey-1);
+}
+

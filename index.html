@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Álbuns</title>
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/globalStyles.css">
+  <link rel="stylesheet" href="./src/styles/index.css">
+
+  <script src="./src/scripts/theme.js" defer></script>
+  <script src="./src/scripts/productsData.js" defer></script>
+  <script src="./src/scripts/index.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="logo">Open music</h1>
+    <button class="dark-mode-button">
+      <img src="./src/assets/img/moon.svg" alt="dark">
+    </button>
+  </header>
+
+
+  <main class="container">
+
+    <section class="filters-section">
+      <div class="gener-music">
+        <h2>Gênero Musical</h2>
+        <ul class="filter-buttons"></ul>
+      </div>
+      <div class="price-filter-container">
+        <div class="text-price">
+          <h2>Definir Preço</h2>
+          <p>Até R$ <span class="price-value">0</span></p>
+
+        </div>
+        <input type="range" min="0" max="200" value="0" class="price-filter">
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <h2>Álbuns Encontrados</h2>
+      <ul class="card-list"></ul>
+    </section>
+  </main>
+
+
+</body>
+
+</html>
